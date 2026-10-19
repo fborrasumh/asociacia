@@ -1,0 +1,79 @@
+{
+  "slug": "asociacia",
+  "name": "AsociacIA",
+  "tagline": "La suite de IA de tu asociación de pacientes",
+  "eyebrow": "Suite de IA para asociaciones de pacientes",
+  "h1": "Más actividad con las mismas personas, *con la IA bajo control*",
+  "lede": "Nueve módulos para comunicar, educar, gestionar reuniones, conseguir financiación y preparar la memoria anual. Todo el trabajo de la asociación vive en un único archivo en vuestra carpeta compartida de Drive o OneDrive.",
+  "logo_icon": "users",
+  "ia": true,
+  "lang": "es",
+  "langs": [
+    "es",
+    "ca",
+    "eu",
+    "gl",
+    "en",
+    "pt"
+  ],
+  "i18n": {
+    "en": {
+      "title": "AsociacIA · The AI suite for your patient association",
+      "eyebrow": "AI suite for patient associations",
+      "h1": "More activity with the same people, *with AI under control*",
+      "lede": "Nine modules to communicate, educate, run meetings, secure funding and prepare the annual report. All of the association's work lives in a single file in your shared Drive or OneDrive folder."
+    },
+    "pt": {
+      "title": "AsociacIA · A suite de IA da sua associação de doentes",
+      "eyebrow": "Suite de IA para associações de doentes",
+      "h1": "Mais atividade com as mesmas pessoas, *com a IA sob controlo*",
+      "lede": "Nove módulos para comunicar, educar, gerir reuniões, obter financiamento e preparar o relatório anual. Todo o trabalho da associação vive num único ficheiro na vossa pasta partilhada do Drive ou do OneDrive."
+    }
+  },
+  "authors": [
+    {
+      "name": "Fernando Borrás Rocher",
+      "orcid": "0000-0002-5519-4573",
+      "affiliation": "Universidad Miguel Hernández de Elche"
+    },
+    {
+      "name": "Ana Pilar Nso-Roca",
+      "orcid": "0000-0002-0601-0213",
+      "affiliation": "Universidad Miguel Hernández de Elche"
+    },
+    {
+      "name": "Francisco José Sánchez Ferrer",
+      "orcid": "0000-0003-2984-5165",
+      "affiliation": "Universidad Miguel Hernández de Elche"
+    }
+  ],
+  "idea_credit": "Desarrollada para la Cátedra del Paciente de la Universidad Miguel Hernández e Instituto ProPatiens.",
+  "modules": [
+    "00-utils",
+    "10-persist",
+    "20-providers",
+    "30-verify",
+    "40-extract",
+    "60-nav",
+    "65-i18n",
+    "70-report"
+  ],
+  "app_js": [
+    "i18n.js",
+    "datos.js",
+    "nucleo.js",
+    "app.js"
+  ],
+  "catalog": {
+    "cat": "gestion",
+    "icon": "ti-users",
+    "sub_es": "Suite para asociaciones de pacientes",
+    "desc_es": "Comunicación, educación, reuniones, financiación, memoria y gobernanza con IA, en un expediente compartido.",
+    "sub_en": "Suite for patient associations",
+    "desc_en": "Communication, education, meetings, funding, annual report and governance with AI, in a shared file.",
+    "tit_es": "AsociacIA",
+    "comp_es": "AsociacIA",
+    "tit_en": "AsociacIA",
+    "comp_en": "AsociacIA"
+  }
+}

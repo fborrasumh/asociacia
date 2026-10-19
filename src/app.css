@@ -1,0 +1,50 @@
+/* ══ Estilos propios de la app (se añaden a forja-base.css). Prefijo fa- para no chocar con clases de Forja ══ */
+.logo .anv{background:linear-gradient(135deg,var(--brasa),#C98200)}
+.hero{padding:44px 38px 30px}.hero h1{max-width:20ch}.fa-inicio{margin:14px 0 0;font-size:14px;color:#C3D3E2}.fa-inicio:empty{display:none}.fa-inicio b{color:#fff}
+/* autores con ORCID */
+.fa-autores{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:24px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14)}.fa-autores-cap{font:600 11px var(--mono);letter-spacing:.16em;text-transform:uppercase;color:#8FA7BE;width:100%;margin-bottom:-4px}
+.fa-autor{display:flex;gap:11px;align-items:center}.fa-autor b{display:block;color:#fff;font:700 16px var(--display)}.fa-autor small{display:block;color:#9DB6CD;font-size:12.5px;max-width:34ch}.fa-av{width:44px;height:44px;border-radius:14px;background:var(--c);color:#fff;display:grid;place-items:center;font:800 15px var(--display);flex:none;box-shadow:0 10px 20px -12px var(--c)}.fa-x{font:300 26px var(--display);color:#5D7C9B}
+.fa-orcid{display:block;margin-top:2px;font:600 11.5px var(--mono);letter-spacing:.02em;color:#7FD6C4!important;text-decoration:none}.fa-orcid:hover{text-decoration:underline}.fa-idea{width:100%;margin:2px 0 0;font-size:13px;color:#9DB6CD;max-width:72ch}
+/* zonas «dónde va cada cosa» */
+.zonas{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:760px){.zonas{grid-template-columns:1fr}}.zona{border-radius:16px;padding:14px 16px;border:2px solid}.zona.l{border-color:#9FD9C4;background:var(--forjado-suave)}.zona.n{border-color:#E9C46A;background:#FFF8E6}.zona h4{margin:0 0 6px;font-family:var(--display);font-size:18px}.zona ul{margin:0;padding-left:18px;font-size:14px;line-height:1.7}
+.sec-title+.zonas,.sec-title+.journey{margin-top:14px}
+/* formularios y utilidades */
+.field input[type=text],.field input[type=number],.field select,.field textarea{width:100%;padding:10px 12px;border:1.5px solid var(--linea);border-radius:10px;font:15px var(--texto);background:#fff;color:var(--tinta)}.field textarea{line-height:1.55;resize:vertical}.field label{display:block;font:700 13px var(--texto);color:var(--acero);margin-bottom:5px}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--brasa);box-shadow:0 0 0 3px rgba(228,87,46,.18)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}@media(max-width:760px){.grid3,.grid2{grid-template-columns:1fr}}
+.card .actions{margin-top:12px}.card h3{margin-top:0}.fa-chk{display:flex;gap:8px;align-items:center;font:500 14.5px var(--texto);cursor:pointer}
+.fa-chip{display:inline-block;font:700 11.5px var(--texto);border-radius:999px;padding:3px 10px;background:var(--linea-2);color:var(--acero)}.fa-chip.ok{background:var(--forjado-suave);color:#0B5A4E}.fa-chip.aviso{background:#FFF1D6;color:#7A4B00}.fa-chip.error{background:var(--brasa-suave);color:var(--aviso)}
+.fa-pre{white-space:pre-wrap;font:12.5px/1.5 var(--mono);background:#0B1C2E;color:#D6E4F0;border-radius:12px;padding:12px;max-height:300px;overflow:auto}
+.spin{display:inline-block;width:14px;height:14px;border:2px solid var(--linea);border-top-color:var(--brasa);border-radius:50%;animation:fa-s .8s linear infinite;vertical-align:-2px}@keyframes fa-s{to{transform:rotate(360deg)}}
+.fa-foot{max-width:1180px;margin:10px auto 0;padding:0 16px 110px}.fa-foot hr{border:0;border-top:1px solid var(--linea);margin:0 0 16px}.fa-foot p{margin:0;font-size:12.8px;color:#6E8299;max-width:76ch;line-height:1.55}
+.glos div{display:block;margin-bottom:12px}.glos b{display:block}
+table{border-collapse:collapse;width:100%;font-size:13.8px}th{background:var(--papel);color:var(--acero);font:700 11px var(--mono);letter-spacing:.07em;text-transform:uppercase;text-align:left}td,th{padding:10px 12px;border-bottom:1px solid var(--linea-2);vertical-align:top}.table-wrap{overflow-x:auto}
+/* barra superior con muchos pasos: solo el actual lleva nombre (evita desbordes) */
+.tb-in{gap:10px}.stepper{min-width:0;flex:1 1 auto;justify-content:center;gap:2px}.sdot:not([data-state="now"]) .lbl{display:none}.sdot{padding-left:4px;padding-right:4px}.sline{min-width:8px;flex:0 1 22px}.logo,.tb-tools{flex:none}
+@media(max-width:900px){.tb-btn .lbl{display:none}}@media(max-width:720px){.hero{padding:28px 20px 24px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+/* ══ AsociacIA (prefijo as-) ══ */
+.muted{color:var(--gris)}.fa-ul{margin:6px 0;padding-left:18px;line-height:1.6}.fa-ul li{margin-bottom:6px}
+.as-zonas3{grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:900px){.as-zonas3{grid-template-columns:minmax(0,1fr)}}.zona.as-zc{border-color:#A9C7E8;background:#EEF5FC}
+.as-mods{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin-top:14px}
+.as-mod{display:flex;flex-direction:column;gap:4px;text-align:left;background:#fff;border:1.5px solid var(--linea);border-radius:var(--r);padding:14px 16px;cursor:pointer;font:inherit;color:var(--tinta);transition:border-color .15s,box-shadow .15s}
+.as-mod:hover{border-color:var(--c)}.as-mod.sel{border-color:var(--c);box-shadow:0 0 0 3px color-mix(in srgb,var(--c) 22%,transparent)}
+.as-mod b{font:700 16px var(--display)}.as-mod span:last-child{font-size:13.2px;color:var(--gris);line-height:1.45}
+.as-mod-ico,.as-dot{width:34px;height:34px;border-radius:10px;background:var(--c);color:#fff;display:grid;place-items:center;flex:none}.as-mod-ico .i,.as-dot .i{width:18px;height:18px}
+.as-mods-sel{margin:0 0 14px}
+.as-tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}.as-tabs button{font:600 13.5px var(--texto);border:1.5px solid var(--linea);background:#fff;color:var(--acero);border-radius:999px;padding:7px 14px;cursor:pointer}.as-tabs button[aria-pressed="true"]{background:var(--tinta);border-color:var(--tinta);color:#fff}
+.as-sel{padding:8px 10px;border:1.5px solid var(--linea);border-radius:10px;font:14px var(--texto);background:#fff;color:var(--tinta)}
+.as-arch{margin-top:6px}
+.as-banner{max-width:1180px;margin:12px auto 0;padding:10px 16px;border-radius:12px;background:#FFF1D6;color:#7A4B00;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;font:600 14px var(--texto)}.as-banner[hidden]{display:none}
+.as-kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:10px 0}@media(max-width:640px){.as-kpis{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.as-kpis div{background:var(--papel);border-radius:12px;padding:10px 12px}.as-kpis b{display:block;font:800 26px var(--display);color:var(--tinta)}.as-kpis span{font-size:12.5px;color:var(--gris)}
+.as-pz-head{display:flex;gap:12px;align-items:flex-start}.as-pz-head>div{flex:1;min-width:0}.as-h3{display:block;margin:0;font:700 19px var(--display);color:var(--tinta);overflow-wrap:anywhere}.as-h4{margin:16px 0 6px;font:700 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--acero)}
+.as-doc{background:var(--papel);border:1px solid var(--linea-2);border-radius:12px;padding:14px 18px;margin-top:12px;line-height:1.6;overflow-wrap:anywhere}.as-doc h4{margin:12px 0 4px;font:700 15px var(--display)}.as-doc p{margin:6px 0}
+.as-avisos{list-style:none;margin:0;padding:0;display:grid;gap:6px}.as-avisos li{padding:8px 12px;border-radius:10px;font-size:14px;background:#FFF8E6;border-left:4px solid #E9C46A;overflow-wrap:anywhere}.as-avisos li.ok{background:var(--forjado-suave);border-color:var(--forjado)}.as-avisos li.error{background:var(--brasa-suave);border-color:var(--brasa)}
+.as-det{margin-top:10px}.as-det summary{cursor:pointer;font-weight:600;color:var(--acero)}
+.as-rev{list-style:none;padding:0;margin:0;line-height:1.9;font-size:14.5px}
+.as-tabla{border-collapse:collapse;width:100%}.as-tr{cursor:pointer}.as-tr:hover td{background:var(--papel)}.as-tr.sel td{background:#EEF5FC}.as-tabla td,.as-tabla th{overflow-wrap:anywhere}
+.as-list{list-style:none;margin:0;padding:0}.as-list li{display:flex;gap:8px;align-items:center;flex-wrap:wrap;padding:8px 0;border-bottom:1px solid var(--linea-2)}
+.as-nombres{display:flex;flex-wrap:wrap;gap:6px 16px;margin-top:8px}.as-rojo{background:var(--brasa-suave)}
+.as-pends{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+.screen .grid2>.card,.screen .grid2 .card{margin:0}.screen>.grid2{margin-bottom:16px}
